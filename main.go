@@ -61,7 +61,7 @@ func analyze(user, host, port, password, database, ssl_ca string, db *sql.DB) {
 
 }
 
-func dump(user, host, port, password, database, config_file, ssl_ca string, db *sql.DB) {
+func dump(user, host, port, password, database, ssl_ca, config_file string, db *sql.DB) {
 	type DbDumpConfig struct {
 		Tables []struct {
 			TableName string `yaml:"table_name"`
